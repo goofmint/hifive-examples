@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="//code.htmlhifive.com/h5.css" rel="stylesheet">
+    <title>hifive logic example</title>
+  </head>
+  <body>
+    <div class="browserNotification">
+      ※ブラウザはできるだけ最新のバージョンをご利用ください。<br>
+      　特に、IE6/7等の古いブラウザでは正しく動作しない場合があります。
+    </div>
+    <p>
+      サーバから商品のリストを非同期通信を使って取得するサンプルです。<br>
+      検索ボタンを押すと、非同期通信を開始します。<br>
+      サーバから結果が戻ってきたら結果を出力します。
+    </p>
+    <div id="container">
+      <h4>商品検索</h4>
+      <select id="select-category">
+	<option value="1">おもちゃ(男の子)</option>
+	<option value="2">おもちゃ(女の子)</option>
+      </select>
+      <input type="button" value="検索" id="searchBtn">
+      
+      <h4>検索結果</h4>
+      <div id="resultList"></div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascripts/logic.js"></script>
+    <script src="//code.htmlhifive.com/ejs-h5mod.js"></script>
+    <script src="//code.htmlhifive.com/h5.js"></script>
+    <script src="javascripts/h5.devtool.js"></script>
+  </body>
+</html>
