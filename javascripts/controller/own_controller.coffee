@@ -27,5 +27,21 @@ $ ->
         dfd.resolve()
      	,1000
       dfd.promise()
+    '#btn_with_own_ajax click': (context) ->
+      context.event.preventDefault()
+      h5.ajax
+        url: '/javascripts/json/own.json'
+      .done this.own((data) ->
+        console.info data
+        console.info 'this', this
+      )
+    '#btn_without_own_ajax click': (context) ->
+      context.event.preventDefault()
+      h5.ajax
+        url: '/javascripts/json/own.json'
+      .done (data) ->
+        console.info data
+        console.info 'this', this
+        
   h5.core.controller '#container', ownController
   	

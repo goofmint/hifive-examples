@@ -32,6 +32,24 @@ $(function() {
         return dfd.resolve();
       }, 1000);
       return dfd.promise();
+    },
+    '#btn_with_own_ajax click': function(context) {
+      context.event.preventDefault();
+      return h5.ajax({
+        url: '/javascripts/json/own.json'
+      }).done(this.own(function(data) {
+        console.info(data);
+        return console.info('this', this);
+      }));
+    },
+    '#btn_without_own_ajax click': function(context) {
+      context.event.preventDefault();
+      return h5.ajax({
+        url: '/javascripts/json/own.json'
+      }).done(function(data) {
+        console.info(data);
+        return console.info('this', this);
+      });
     }
   };
   return h5.core.controller('#container', ownController);
