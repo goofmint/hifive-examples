@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="jasmine/lib/jasmine-2.1.2"/>
+	<classpathentry kind="src" path="jasmine/spec"/>
+	<classpathentry kind="src" path="jasmine/src"/>
+	<classpathentry excluding="logic/|model/|controller/" kind="src" path="javascripts"/>
+	<classpathentry kind="src" path="javascripts/controller"/>
+	<classpathentry kind="src" path="javascripts/logic"/>
+	<classpathentry kind="src" path="javascripts/model"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

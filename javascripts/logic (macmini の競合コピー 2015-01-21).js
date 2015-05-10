@@ -11,8 +11,9 @@ $(function() {
     @returns 商品リスト
      */
     getItemList: function(categoryId) {
-      var dfd, result;
-      dfd = this.deferred();
+      var dfd, me, result;
+      me = this;
+      dfd = me.deferred();
       result = null;
       this._getItemData(categoryId).done(function(data) {
         result = $.map(data, function(obj) {

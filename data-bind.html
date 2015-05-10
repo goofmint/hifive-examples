@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <link href="//code.htmlhifive.com/h5.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/data-bind.css" />
+    <title>データバインド</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="bindtest">
+	<div class="row">
+	  <h1 data-h5-bind="title"></h1>
+	</div>
+    
+	<div class="row" data-h5-context="item">
+	  <div class="col-md-2">ID</div>
+	  <div class="col-md-4"><span data-h5-bind="id"></span></div>
+	  <div class="col-md-2">Name</div>
+	  <div class="col-md-4"><span data-h5-bind="name"></span></div>
+	</div>
+      </div>
+
+      <div id="bindtest2">
+	<div class="row">
+	  <h1 data-h5-bind="title"></h1>
+	</div>
+	<div class="row" data-h5-loop-context="items">
+	  <div class="col-md-2" data-h5-bind="name"></div>
+	</div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.htmlhifive.com/ejs-h5mod.js"></script>
+    <script src="//code.htmlhifive.com/h5.dev.js"></script>
+    <script src="javascripts/dataBind.js"></script>
+  </body>
+</html>

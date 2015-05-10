@@ -7,19 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="//code.htmlhifive.com/h5.css" rel="stylesheet">
-    <link href="/stylesheets/todo.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/qunit-1.17.1.css" type="text/css" media="screen" />
     <title>hifive logic example</title>
   </head>
   <body>
-    <div class="browserNotification">
-      ※ブラウザはできるだけ最新のバージョンをご利用ください。<br>
-      　特に、IE6/7等の古いブラウザでは正しく動作しない場合があります。
-    </div>
-    <p>
-      サーバから商品のリストを非同期通信を使って取得するサンプルです。<br>
-      検索ボタンを押すと、非同期通信を開始します。<br>
-      サーバから結果が戻ってきたら結果を出力します。
-    </p>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">test markup, will be hidden</div> 
     <div id="container">
       <h4>商品検索</h4>
       <select id="select-category">
@@ -27,7 +20,6 @@
 	<option value="2">おもちゃ(女の子)</option>
       </select>
       <input type="button" value="検索" id="searchBtn">
-
       <h4>検索結果</h4>
       <div id="resultList"></div>
     </div>
@@ -35,6 +27,7 @@
     <script src="javascripts/logic.js"></script>
     <script src="//code.htmlhifive.com/ejs-h5mod.js"></script>
     <script src="//code.htmlhifive.com/h5.js"></script>
-    <script src="javascripts/h5.devtool.js"></script>
+    <script src="javascripts/qunit.js"></script>
+    <script src="javascripts/logic_test.js"></script>
   </body>
 </html>

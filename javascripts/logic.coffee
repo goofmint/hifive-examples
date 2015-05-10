@@ -64,3 +64,4 @@ $ ->
       ).fail (errMsg) ->
         alert "取得に失敗しました" + errMsg
   h5.core.controller "#container", itemSearchController
+  h5.core.expose itemSearchController

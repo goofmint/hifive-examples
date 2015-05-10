@@ -3,7 +3,7 @@ html, body {
    padding: 0px;
    margin: 0px;
    height:100%;
-
+    background: url(images/Box-2.png);
 }
 
 .content {
@@ -427,3 +427,9 @@ html, body {
 }
 
 /* -------- tmplDetail end ------- */
+#container {
+    padding-top: 2em;
+    padding-left: 1em;
+    font-size: 15px;
+    color: red;
+}

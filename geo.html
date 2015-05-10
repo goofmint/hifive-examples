@@ -7,21 +7,25 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="//code.htmlhifive.com/h5.css" rel="stylesheet">
-    <title>hifive example</title>
+    <title>hifive geo example</title>
+    <style>
+      .gmap3{
+        margin: 20px auto;
+        border: 1px dashed #C0C0C0;
+        width: 500px;
+        height: 250px;
+      }
+    </style>
   </head>
   <body>
-    <div class="browserNotification">
-      ※ブラウザは出来るだけ最新のバージョンをご利用ください。<br>
-      　特に、IE6/7等の古いブラウザでは正しく動作しない場合があります。
-    </div>
     <div id="container">
-      <input type="text" id="left" value="" /> +
-      <input type="text" id="right" value="" />
-      <input type="button" id="calc" value="=" />
-      <span id="result"> </span>
+      <div id="map1" class="gmap3"></div>
+      <div id="map2" class="gmap3"></div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="javascripts/calc.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="javascripts/gmap3.min.js"></script>
+    <script src="javascripts/geo.js"></script>
     <script src="//code.htmlhifive.com/ejs-h5mod.js"></script>
     <script src="//code.htmlhifive.com/h5.js"></script>
     <script src="javascripts/h5.devtool.js"></script>

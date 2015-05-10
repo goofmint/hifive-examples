@@ -7,23 +7,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="//code.htmlhifive.com/h5.css" rel="stylesheet">
+    <link rel="stylesheet" href="/jasmine/lib/jasmine-2.1.2/jasmine.css" />
     <title>hifive example</title>
   </head>
   <body>
-    <div class="browserNotification">
-      ※ブラウザは出来るだけ最新のバージョンをご利用ください。<br>
-      　特に、IE6/7等の古いブラウザでは正しく動作しない場合があります。
-    </div>
-    <div id="container">
-      <input type="text" id="left" value="" /> +
-      <input type="text" id="right" value="" />
-      <input type="button" id="calc" value="=" />
-      <span id="result"> </span>
-    </div>
+    <script src="/jasmine/lib/jasmine-2.1.2/jasmine.js"></script>
+    <script src="/jasmine/lib/jasmine-2.1.2/jasmine-html.js"></script>
+    <script src="/jasmine/lib/jasmine-2.1.2/boot.js"></script>
+    <script src="/jasmine/lib/jasmine-2.1.2/console.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="javascripts/calc.js"></script>
+    <script src="javascripts/calc-test.js"></script>
     <script src="//code.htmlhifive.com/ejs-h5mod.js"></script>
     <script src="//code.htmlhifive.com/h5.js"></script>
-    <script src="javascripts/h5.devtool.js"></script>
   </body>
 </html>

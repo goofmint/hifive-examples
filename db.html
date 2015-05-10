@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//code.htmlhifive.com/h5.css" rel="stylesheet">
     <title>hifive example</title>
   </head>
   <body>
-    <div class="browserNotification">
-      ※ブラウザは出来るだけ最新のバージョンをご利用ください。<br>
-      　特に、IE6/7等の古いブラウザでは正しく動作しない場合があります。
-    </div>
-    <div id="container">
-      <input type="text" id="left" value="" /> +
-      <input type="text" id="right" value="" />
-      <input type="button" id="calc" value="=" />
-      <span id="result"> </span>
+    <div class="container">
+      <div class="container-fluid">
+	<div class="row">
+	  <div class="col-md-12">
+	    <form role="form">
+	      <div class="form-group">
+		<label for="exampleInputTask">タスク</label>
+		<input type="text" name="task" class="form-control" id="InputTask" placeholder="タスクを入力">
+	      </div>
+	      <button type="submit" class="btn btn-default">登録</button>
+	    </form>
+	  </div>
+	</div>
+      </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="javascripts/calc.js"></script>
+    <script src="javascripts/db.js"></script>
     <script src="//code.htmlhifive.com/ejs-h5mod.js"></script>
     <script src="//code.htmlhifive.com/h5.js"></script>
-    <script src="javascripts/h5.devtool.js"></script>
   </body>
 </html>
