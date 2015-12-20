@@ -20,7 +20,7 @@ $(function() {
     "#calc click": function() {
       var ret;
       ret = this.calcLogic.add($("#right").val(), $("#left").val());
-      this.$find("#result").html(ret);
+      this.$find("#result2").html(ret);
     }
   };
   
